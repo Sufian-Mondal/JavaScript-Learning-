@@ -7,7 +7,7 @@ console.log(countryPopulation);
 console.log(capitalCity);
 */
 
-//data type learning 
+//data type learning
 /*
 let fristName = "shimul";
 console.log(fristName);
@@ -120,7 +120,7 @@ const markHigherBMI = BMImark > BMIjohn;
 
 console.log(BMImark, BMIjohn, markHigherBMI);
 
-*/
+
 
 const fristName = "jonas";
 const job = "teacher";
@@ -135,6 +135,79 @@ console.log('string with \n\
 multiple \n\
 action');
 
+// const massMark = 95;
+// const heightMark = 1.88;
+// const massJohn = 85;
+// const heightJohn = 1.76;
+
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIMark, BMIJohn);
+
+if (BMIMark > BMIJohn) {
+  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
+} else {
+  console.log(`John's BMI (${BMIJohn}) is higher tharn Mark's (${BMIMark})!`);
+}
 
 
+//Logical Operator AND,OR,NOT
 
+const hasDriverLicense = true; //A
+const hasGoodVision = true; //B
+
+console.log(hasDriverLicense && hasGoodVision); 
+console.log(hasDriverLicense || hasGoodVision);
+console.log(!hasDriverLicense);
+
+if (hasDriverLicense && hasGoodVision){
+  console.log('sarah is able to drive');
+} else {
+  console.log('someone should drive');
+}
+
+const isTired = false; //C
+
+console.log(hasDriverLicense && hasGoodVision && isTired);
+
+if(hasDriverLicense && hasGoodVision && isTired){
+  console.log('sarah is able to drive');
+}else {
+  console.log('someone else drive!');
+}
+*/
+
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKoalas = (88 + 91 + 110) / 3;
+// console.log(scoreDolphins, scoreKoalas);
+
+// if(scoreDolphins > scoreKoalas){
+//   console.log('dolphins win the trophy');
+// } else if (scoreKoalas > scoreDolphins){
+//   console.log('koalas win the trophy');
+// } else if (scoreDolphins===scoreKoalas){
+//   console.log('both win the trophy!');
+// }
+
+const scoreDolphins = (97 + 112 + 80) / 3;
+const scoreKoalas = (109 + 95 + 50) / 3;
+console.log(scoreDolphins, scoreKoalas);
+
+if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+  console.log("dolphins win the trophy");
+} else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+  console.log("koalas win the trophy");
+} else if (
+  scoreDolphins === scoreKoalas &&
+  scoreDolphins >= 100 &&
+  scoreKoalas >= 100
+) {
+  console.log("both win the trophy!");
+} else {
+  console.log("No one win the trophy!");
+}
