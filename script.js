@@ -180,7 +180,7 @@ if(hasDriverLicense && hasGoodVision && isTired){
 }else {
   console.log('someone else drive!');
 }
-*/
+
 
 // const scoreDolphins = (96 + 108 + 89) / 3;
 // const scoreKoalas = (88 + 91 + 110) / 3;
@@ -211,3 +211,53 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 } else {
   console.log("No one win the trophy!");
 }
+
+
+const day = 'monday'
+
+switch(day){
+  case 'monday': //day === 'monday'
+  console.log('preparing theory videos');
+  console.log('go to conding meetup');
+  break;
+  case 'tuesday':
+    console.log('plan conding structure');
+    break;
+  case 'wednesday':
+  case 'thursday':
+    console.log('go to office');
+    break;
+  case 'friday':
+    console.log('record videos');
+    break;
+  case 'saturday':
+  case 'sunday':
+    console.log('enjoy the weekend');
+    break;
+  default:
+    console.log('not a valid day!');
+}
+
+if (day === 'monday'){
+  console.log('plan course structure');
+  console.log('go to the coding meetup');
+} else if (day === 'tuesday') {
+  console.log('preparing theory');
+} else if (day === 'wednesday' || day === 'thursday'){
+  console.log('write code example');
+} else if (day === 'friday'){
+  console.log('records videos!');
+ } else if (day === 'saturday' || day === 'sunday'){
+  console.log('enjoy the weekend');
+ } else {
+  console.log('not a valid day!')
+ }
+*/
+
+const bill = 275;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(
+  `the bill was ${bill}, the tip was ${tip}, and the total value is ${
+    bill + tip
+  }`
+);
